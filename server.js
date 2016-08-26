@@ -25,7 +25,7 @@ app.use(express.static('public'));
 // ========================================
 mongoose.connect
 	(
-		'mongodb://localhost/bidendb'
+		'mongodb://heroku_tgpd0bm9:v85fml9vq8jsp7tekmrelva4an@ds017636.mlab.com:17636/heroku_tgpd0bm9'
 	);
 var db = mongoose.connection;
 
