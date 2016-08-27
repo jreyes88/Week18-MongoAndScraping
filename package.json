@@ -7,8 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "body-parser": "^1.15.0",
     "cheerio": "^0.20.0",
@@ -17,5 +15,14 @@
     "mongoose": "^4.4.6",
     "morgan": "^1.7.0",
     "request": "^2.69.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jreyes88/Week18-MongoAndScraping.git"
+  },
+  "author": "Joey Reyes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jreyes88/Week18-MongoAndScraping.gitissues"
   }
 }
