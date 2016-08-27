@@ -1,17 +1,24 @@
 // grab the articles as a json
 // ========================================
-$.getJSON('/articles', function(data)
-    {
-        // for each one
-        // ====================
-        for (var i = 0; i<data.length; i++)
+$(document).on('click', '#mainButton', function(){
+    console.log('Scraping button works');
+    $.ajax({
+        url: '/scrape'
+    }).done(function(){
+        $.getJSON('/articles', function(data)
             {
-                // display the apropos information on the page
+                // for each one
                 // ====================
-                $('#articles').append('<p data-id="' + data[i]._id + '">'+ data[i].title + '<br />'+ data[i].link + '</p>');
+                for (var i = 0; i<data.length; i++)
+                    {
+                        // display the apropos information on the page
+                        // ====================
+                        $('#articles').append('<p data-id="' + data[i]._id + '">'+ data[i].title + '<br />'+ data[i].link + '</p>');
+                    }
             }
-    }
-);
+        );
+    })
+})
 
 // whenever someone clicks a p tag
 // ========================================
