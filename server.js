@@ -115,12 +115,12 @@ app.get('/scrape', function(req, res)
 							}
 						);
 					}
+					console.log(result);
 					res.json(result);
 			}
 		);
 		// tell the browser that we finished scraping the text.
 		console.log("Scrape Complete");
-		res.redirect("/");
 	}
 );
 
