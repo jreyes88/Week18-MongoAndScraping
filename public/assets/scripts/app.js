@@ -8,6 +8,7 @@ $(document).on('click', '#mainButton', function(){
         console.log("scraping done");
         $.getJSON('/articles', function(data)
             {
+                console.log(data);
                 // for each one
                 // ====================
                 for (var i = 0; i<data.length; i++)
