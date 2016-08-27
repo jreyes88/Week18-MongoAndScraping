@@ -5,6 +5,7 @@ $(document).on('click', '#mainButton', function(){
     $.ajax({
         url: '/scrape'
     }).done(function(){
+        console.log("scraping done");
         $.getJSON('/articles', function(data)
             {
                 // for each one
