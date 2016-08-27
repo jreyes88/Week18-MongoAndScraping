@@ -37,6 +37,7 @@ app.set('view engine', 'handlebars');
 mongoose.connect
 	(
 		'mongodb://heroku_p1wk2f3n:6t9sbf732l81dlr7mh7nni4ku7@ds017726.mlab.com:17726/heroku_p1wk2f3n'
+		// 'mongodb://localhost/bidendb'
 	);
 var db = mongoose.connection;
 
