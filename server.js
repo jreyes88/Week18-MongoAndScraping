@@ -75,7 +75,7 @@ app.get('/scrape', function(req, res)
 		// first, we grab the body of the html with request
 		request('http://www.theonion.com/search?q=joe+biden', function(error, response, html)
 			{
-				if (error || response.statusCoe != 200)
+				if (error || response.statusCode != 200)
 					{
 						console.log(error);
 					}
